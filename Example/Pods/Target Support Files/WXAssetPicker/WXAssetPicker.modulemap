@@ -1,0 +1,6 @@
+framework module WXAssetPicker {
+  umbrella header "WXAssetPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
