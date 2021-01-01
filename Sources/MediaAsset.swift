@@ -13,7 +13,7 @@ class MediaAsset {
     
     var asset: PHAsset
     
-    var selected: Bool = false
+    var isSelected: Bool = false
     
     var keepOrigin: Bool = false
     

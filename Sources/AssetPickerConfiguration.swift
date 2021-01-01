@@ -26,7 +26,10 @@ public struct AssetType: OptionSet {
     static let all: AssetType = [.image, .video, .gif]
 }
 
-public class AssetPickerOptions {
+public class AssetPickerConfiguration {
+    
+    /// The background color of the asset picker. The default color is `#323232`.
+    public var backgroundColor = UIColor(red: 50.0/255, green: 50.0/255, blue: 50.0/255, alpha: 1.0)
     
     public var assetTtype: AssetType = .all
     
@@ -40,8 +43,8 @@ public class AssetPickerOptions {
     
     public var bottomBarHeight: CGFloat = 45.0
     
-    public static func `default`() -> AssetPickerOptions {
-        let configuration = AssetPickerOptions()
+    public static func `default`() -> AssetPickerConfiguration {
+        let configuration = AssetPickerConfiguration()
         configuration.showBottomBar = true
         configuration.doneButtonTitle = "Done"
         return configuration

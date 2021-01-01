@@ -17,10 +17,10 @@ class AlbumPickerViewController: UIViewController {
     
     var selectionHandler: ((_ assets: [MediaAsset]) -> Void)?
     
-    private let options: AssetPickerOptions
+    private let configuration: AssetPickerConfiguration
     
-    init(options: AssetPickerOptions) {
-        self.options = options
+    init(configuration: AssetPickerConfiguration) {
+        self.configuration = configuration
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -116,7 +116,7 @@ extension AlbumPickerViewController: UITableViewDataSource, UITableViewDelegate 
         tableView.deselectRow(at: indexPath, animated: false)
         
         let album = dataSource[indexPath.row]
-        let assetPickerVC = AssetPickerViewController(options: options, assetCollection: album.assetCollection)
+        let assetPickerVC = AssetPickerViewController(configuration: configuration, assetCollection: album.assetCollection)
         //assetPickerVC.selectionHandler = selectionHandler
         navigationController?.pushViewController(assetPickerVC, animated: true)
     }

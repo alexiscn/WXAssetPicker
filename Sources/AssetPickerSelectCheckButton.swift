@@ -10,38 +10,38 @@ import UIKit
 
 class AssetPickerSelectCheckButton: UIButton {
     
-    private let selectionNumberLabel: UILabel
+    private let numberLabel: UILabel
     
-    private let selectionImageView: UIImageView
+    private let radioImageView: UIImageView
     
-    private let normalSelectView: UIView
+    override var isSelected: Bool {
+        didSet {
+            numberLabel.isHidden = !isSelected
+            radioImageView.isHidden = isSelected
+        }
+    }
     
     override init(frame: CGRect) {
         
-        selectionImageView = UIImageView()
-        selectionImageView.image = UIImage(named: "FriendsSendsPicturesSelectIcon_27x27_")
+        radioImageView = UIImageView()
+        radioImageView.image = AssetPickerUtility.image(named: "wx_asset_picker_select_24x24_")
         
-        normalSelectView = UIView()
-        normalSelectView.layer.backgroundColor = UIColor(white: 0, alpha: 0.3).cgColor
-        normalSelectView.layer.cornerRadius = 1.5
-        normalSelectView.layer.cornerRadius = 12
-        
-        selectionNumberLabel = UILabel()
-        selectionNumberLabel.isHidden = true
-        selectionNumberLabel.layer.cornerRadius = 11.5
-        selectionNumberLabel.layer.masksToBounds = true
-        selectionNumberLabel.clipsToBounds = true
-        selectionNumberLabel.frame = CGRect(x: 2, y: 2, width: 23, height: 23)
-        selectionNumberLabel.backgroundColor = UIColor(red: 26.0/255, green: 173.0/255, blue: 25.0/255, alpha: 1.0)
+        numberLabel = UILabel()
+        numberLabel.isHidden = true
+        numberLabel.layer.cornerRadius = 12
+        numberLabel.clipsToBounds = true
+        numberLabel.backgroundColor = UIColor(red: 0.027, green: 0.757, blue: 0.376, alpha: 1.0)
+        numberLabel.textColor = .white
+        numberLabel.textAlignment = .center
+        numberLabel.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         
         super.init(frame: frame)
         
         imageView?.isHidden = true
         titleLabel?.isHidden = true
         
-        addSubview(normalSelectView)
-//        addSubview(selectionImageView)
-        addSubview(selectionNumberLabel)
+        addSubview(radioImageView)
+        addSubview(numberLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -51,17 +51,24 @@ class AssetPickerSelectCheckButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        normalSelectView.frame = CGRect(x: 18, y: 8, width: 24, height: 24)
-        selectionNumberLabel.frame = CGRect(x: 2, y: 2, width: 24, height: 24)
+        radioImageView.frame = CGRect(x: 18, y: 8, width: 24, height: 24)
+        numberLabel.frame = radioImageView.frame
     }
     
-    private func startPopupAnimation() {
-        selectionNumberLabel.layer.removeAllAnimations()
-        let animation = CAKeyframeAnimation(keyPath: "transform")
-        animation.duration = 0.6
-        animation.keyTimes = [0, 0.8, 0.9, 1.0]
-        animation.values = [1, 1.1, 0.9, 1.0]
-        selectionNumberLabel.layer.add(animation, forKey: "popup")
+    func setSelectedIndex(_ index: Int, animated: Bool) {
+        numberLabel.text = String(index)
+        if animated {
+            startPopupAnimation()
+        }
+    }
+    
+    func startPopupAnimation() {
+        numberLabel.layer.removeAllAnimations()
+        let animation = CAKeyframeAnimation(keyPath: "transform.scale")
+        animation.duration = 0.4
+        animation.keyTimes = [0, 0.3, 0.6, 1.0].map { NSNumber(value: $0) }
+        animation.values = [1.0, 1.2, 0.9, 1.0].map { NSNumber(value: $0) }
+        numberLabel.layer.add(animation, forKey: "popup")
     }
     
 }

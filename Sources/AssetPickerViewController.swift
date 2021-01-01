@@ -28,12 +28,12 @@ public class AssetPickerViewController: UIViewController {
     
     private(set) var selectedIndexPathList: [IndexPath] = []
     
-    private let options: AssetPickerOptions
+    private let configuration: AssetPickerConfiguration
     
     private var assetCollection: PHAssetCollection?
     
-    public init(options: AssetPickerOptions = .default(), assetCollection: PHAssetCollection? = nil) {
-        self.options = options
+    public init(configuration: AssetPickerConfiguration = .default(), assetCollection: PHAssetCollection? = nil) {
+        self.configuration = configuration
         self.assetCollection = assetCollection
         super.init(nibName: nil, bundle: nil)
     }
@@ -45,7 +45,7 @@ public class AssetPickerViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 50.0/255, green: 50.0/255, blue: 50.0/255, alpha: 1.0)
         configureNavigationBar()
         configureCollectionView()
         configureBottomBar()
@@ -72,7 +72,7 @@ public class AssetPickerViewController: UIViewController {
     }
     
     private func configureCollectionView() {
-        let spacing: CGFloat = 4.0
+        let spacing: CGFloat = 2.0
         let numberOfItemsInRow: Int = 4
         var itemWidth = (UIScreen.main.bounds.width - CGFloat(numberOfItemsInRow + 1) * spacing)/CGFloat(numberOfItemsInRow)
         itemWidth = CGFloat(floorf(Float(itemWidth)))
@@ -90,13 +90,13 @@ public class AssetPickerViewController: UIViewController {
         collectionView.delegate = self
         collectionView.register(AssetPickerCollectionViewCell.self,
                                 forCellWithReuseIdentifier: NSStringFromClass(AssetPickerCollectionViewCell.self))
-        collectionView.contentInset = options.showBottomBar ? UIEdgeInsets(top: 0, left: 0, bottom: 60, right: 0) : .zero
+        collectionView.contentInset = configuration.showBottomBar ? UIEdgeInsets(top: 0, left: 0, bottom: 60, right: 0) : .zero
         view.addSubview(collectionView)
     }
     
     private func configureBottomBar() {
     
-        guard options.showBottomBar else {
+        guard configuration.showBottomBar else {
             return
         }
     
@@ -207,19 +207,20 @@ public class AssetPickerViewController: UIViewController {
     private func updateSelection(at indexPath: IndexPath) {
     
         let mediaAsset = dataSource[indexPath.row]
-        if mediaAsset.selected {
+        if mediaAsset.isSelected {
             selectedIndexPathList.append(indexPath)
         } else {
             mediaAsset.index = -1
             if let index = selectedIndexPathList.firstIndex(where: { $0 == indexPath }) {
                 selectedIndexPathList.remove(at: index)
             }
+            
+            for (index, item) in selectedIndexPathList.enumerated() {
+                let asset = dataSource[item.row]
+                asset.index = index + 1
+            }
+            collectionView.reloadItems(at: selectedIndexPathList)
         }
-        for (index, item) in selectedIndexPathList.enumerated() {
-            let asset = dataSource[item.row]
-            asset.index = index + 1
-        }
-        collectionView.reloadItems(at: selectedIndexPathList)
         bottomBar?.updateButtonEnabled(selectedIndexPathList.count > 0)
     }
 }
@@ -246,7 +247,7 @@ extension AssetPickerViewController: UICollectionViewDataSource, UICollectionVie
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let asset = dataSource[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(AssetPickerCollectionViewCell.self), for: indexPath) as! AssetPickerCollectionViewCell
-        cell.update(mediaAsset: asset, options: options)
+        cell.update(mediaAsset: asset, configuration: configuration)
         cell.selectionHandler = { [weak self] in
             self?.updateSelection(at: indexPath)
         }

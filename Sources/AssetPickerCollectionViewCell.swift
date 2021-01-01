@@ -17,11 +17,9 @@ class AssetPickerCollectionViewCell: UICollectionViewCell {
     
     private let imageView: UIImageView
     
-    private let selectionButton: UIButton
+    private let selectionButton: AssetPickerSelectCheckButton
     
-    private let selectionImageView: UIImageView
-    
-    private let selectionNumberLabel: UILabel
+    private let selectionOverlay: UIView
     
     private var mediaAsset: MediaAsset?
     
@@ -41,31 +39,17 @@ class AssetPickerCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         
-        selectionButton = UIButton(type: .custom)
+        selectionButton = AssetPickerSelectCheckButton(frame: .zero)
         
-        selectionImageView = UIImageView()
-        selectionImageView.image = AssetPickerUtility.image(named: "wx_asset_picker_select_20x21_")
-        
-        selectionNumberLabel = UILabel()
-        selectionNumberLabel.isHidden = true
-        selectionNumberLabel.layer.cornerRadius = 11.5
-        selectionNumberLabel.layer.masksToBounds = true
-        selectionNumberLabel.clipsToBounds = true
-        selectionNumberLabel.frame = CGRect(x: 2, y: 2, width: 23, height: 23)
-        selectionNumberLabel.backgroundColor = UIColor(red: 26.0/255, green: 173.0/255, blue: 25.0/255, alpha: 1.0)
-        
-        selectionNumberLabel.textAlignment = .center
-        selectionNumberLabel.textColor = .white
-        
-        selectionNumberLabel.font = UIFont.systemFont(ofSize: 14)
+        selectionOverlay = UIView()
+        selectionOverlay.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        selectionOverlay.isHidden = true
         
         super.init(frame: frame)
         
         contentView.addSubview(imageView)
+        contentView.addSubview(selectionOverlay)
         contentView.addSubview(selectionButton)
-        contentView.addSubview(selectionImageView)
-        
-        selectionImageView.addSubview(selectionNumberLabel)
         
         selectionButton.addTarget(self, action: #selector(selectionButtonTapped), for: .touchUpInside)
     }
@@ -79,8 +63,8 @@ class AssetPickerCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         imageView.frame = bounds
+        selectionOverlay.frame = bounds
         selectionButton.frame = CGRect(x: bounds.width/2, y: 0, width: bounds.width/2, height: bounds.height/2)
-        selectionImageView.frame = CGRect(x: bounds.width - 27, y: 0, width: 27, height: 27)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -89,22 +73,21 @@ class AssetPickerCollectionViewCell: UICollectionViewCell {
     
     @objc private func selectionButtonTapped() {
         guard let mediaAsset = mediaAsset, let parent = parent else { return }
-        if !mediaAsset.selected && parent.selectedIndexPathList.count >= 9 {
+        if !mediaAsset.isSelected && parent.selectedIndexPathList.count >= 9 {
             return
         }
         
-        mediaAsset.selected.toggle()
-        if mediaAsset.selected {
+        mediaAsset.isSelected.toggle()
+        selectionButton.isSelected = mediaAsset.isSelected
+        selectionOverlay.isHidden = !mediaAsset.isSelected
+        if mediaAsset.isSelected {
             let index = parent.selectedIndexPathList.count + 1
-            selectionNumberLabel.text = String(index)
-            selectionNumberLabel.isHidden = false
-        } else {
-            selectionNumberLabel.isHidden = true
+            selectionButton.setSelectedIndex(index, animated: true)
         }
         selectionHandler?()
     }
     
-    func update(mediaAsset: MediaAsset, options: AssetPickerOptions) {
+    func update(mediaAsset: MediaAsset, configuration: AssetPickerConfiguration) {
         self.mediaAsset = mediaAsset
         
         //selectionButton.isHidden = !options.canSendMultiImage
@@ -119,8 +102,9 @@ class AssetPickerCollectionViewCell: UICollectionViewCell {
 //            }
         }
         
-        selectionNumberLabel.text = String(mediaAsset.index)
-        selectionNumberLabel.isHidden = !mediaAsset.selected
+        selectionButton.setSelectedIndex(mediaAsset.index, animated: false)
+        selectionButton.isSelected = mediaAsset.isSelected
+        selectionOverlay.isHidden = !mediaAsset.isSelected
         
         let size = CGSize(width: 150, height: 150)
         PHCachingImageManager.default().requestImage(for: mediaAsset.asset,
