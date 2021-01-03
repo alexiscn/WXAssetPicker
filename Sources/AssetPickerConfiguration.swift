@@ -28,8 +28,26 @@ public struct AssetType: OptionSet {
 
 public class AssetPickerConfiguration {
     
-    /// The background color of the asset picker. The default color is `#323232`.
-    public var backgroundColor = UIColor(red: 50.0/255, green: 50.0/255, blue: 50.0/255, alpha: 1.0)
+    public struct Layouts {
+        
+        public var bottomBarHeight: CGFloat = 45.0
+        
+    }
+    
+    public struct Assets {
+        
+        /// The background color of the asset picker. The default color is `#323232`.
+        public var backgroundColor = UIColor(red: 50.0/255, green: 50.0/255, blue: 50.0/255, alpha: 1.0)
+        
+        public var radioButtonNormalImage: UIImage? = Utility.image(named: "wx_asset_picker_select_24x24_")
+        
+        public var radioButtonSelectedColor: UIColor = UIColor(red: 0.027, green: 0.757, blue: 0.376, alpha: 1.0)
+        
+    }
+    
+    public var assets = Assets()
+    
+    public var layouts = Layouts()
     
     public var assetTtype: AssetType = .all
     
@@ -40,8 +58,6 @@ public class AssetPickerConfiguration {
     public var doneButtonTitle: String = "Done"
     
     public var showBottomBar: Bool = true
-    
-    public var bottomBarHeight: CGFloat = 45.0
     
     public static func `default`() -> AssetPickerConfiguration {
         let configuration = AssetPickerConfiguration()

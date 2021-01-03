@@ -5,12 +5,12 @@
 //  Created by xu.shuifeng on 2020/5/28.
 //
 
-import Foundation
+import UIKit
 
-class AssetPickerUtility {
+class Utility {
     
     static var bundle: Bundle? = {
-        if let url = Bundle(for: AssetPickerUtility.self).url(forResource: "Media", withExtension: "bundle") {
+        if let url = Bundle(for: Utility.self).url(forResource: "Media", withExtension: "bundle") {
             return Bundle(url: url)
         }
         return nil

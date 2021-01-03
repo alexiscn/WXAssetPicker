@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AssetPickerBottomBarDelegate {
+    
+}
+
 class AssetPickerBottomBar: UIView {
     
     var previewHandler: (() -> Void)?
@@ -26,7 +30,7 @@ class AssetPickerBottomBar: UIView {
     override init(frame: CGRect) {
         
         backgroundImageView = UIImageView()
-        backgroundImageView.image = AssetPickerUtility.image(named: "wx_asset_picker_toolbar_bg")
+        backgroundImageView.image = Utility.image(named: "wx_asset_picker_toolbar_bg")
         
         containerView = UIView()
         
@@ -63,36 +67,6 @@ class AssetPickerBottomBar: UIView {
         containerView.addSubview(originButton)
         containerView.addSubview(sendButton)
         
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: self.topAnchor),
-            containerView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
-            containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            containerView.heightAnchor.constraint(equalToConstant: 45.0)
-        ])
-        
-        previewButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            previewButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 6),
-            previewButton.heightAnchor.constraint(equalToConstant: 20),
-            previewButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor)
-        ])
-        
-        originButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            originButton.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-            originButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor)
-        ])
-        
-        sendButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            sendButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
-            sendButton.widthAnchor.constraint(equalToConstant: 60),
-            sendButton.heightAnchor.constraint(equalToConstant: 30),
-            sendButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15)
-        ])
-        
         previewButton.addTarget(self, action: #selector(previewButtonClicked), for: .touchUpInside)
         originButton.addTarget(self, action: #selector(originButtonClicked), for: .touchUpInside)
         sendButton.addTarget(self, action: #selector(sendButtonClicked), for: .touchUpInside)
@@ -107,6 +81,10 @@ class AssetPickerBottomBar: UIView {
         
         backgroundImageView.frame = bounds
         containerView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 45)
+        
+        previewButton.frame = CGRect(x: 6, y: (bounds.height - 20)/2.0, width: 60, height: 20)
+        originButton.frame = CGRect(x: (bounds.width - 80)/2.0, y: 0, width: 80, height: bounds.height)
+        sendButton.frame = CGRect(x: bounds.width - 60 - 15, y: (bounds.height - 30)/2.0, width: 60, height: 30)
     }
     
     func updateButtonEnabled(_ enabled: Bool) {

@@ -24,7 +24,7 @@ class AssetPickerSelectCheckButton: UIButton {
     override init(frame: CGRect) {
         
         radioImageView = UIImageView()
-        radioImageView.image = AssetPickerUtility.image(named: "wx_asset_picker_select_24x24_")
+        radioImageView.image = Utility.image(named: "wx_asset_picker_select_24x24_")
         
         numberLabel = UILabel()
         numberLabel.isHidden = true

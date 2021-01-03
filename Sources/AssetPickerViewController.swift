@@ -45,11 +45,10 @@ public class AssetPickerViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor(red: 50.0/255, green: 50.0/255, blue: 50.0/255, alpha: 1.0)
+        view.backgroundColor = configuration.assets.backgroundColor
         configureNavigationBar()
         configureCollectionView()
         configureBottomBar()
-        configureConstraints()
         configureData()
     }
     
@@ -84,6 +83,7 @@ public class AssetPickerViewController: UIViewController {
         layout.itemSize = CGSize(width: itemWidth, height: itemWidth)
         
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .clear
         collectionView.allowsMultipleSelection = true
         collectionView.dataSource = self
@@ -100,7 +100,9 @@ public class AssetPickerViewController: UIViewController {
             return
         }
     
-        let bottomBar = AssetPickerBottomBar(frame: .zero)
+        let height = view.safeAreaInsets.bottom + configuration.layouts.bottomBarHeight
+        let frame = CGRect(x: 0, y: view.bounds.height - height, width: view.bounds.width, height: height)
+        let bottomBar = AssetPickerBottomBar(frame: frame)
         bottomBar.previewHandler = {
             
         }
@@ -109,26 +111,6 @@ public class AssetPickerViewController: UIViewController {
         }
         view.addSubview(bottomBar)
         self.bottomBar = bottomBar
-    }
-    
-    private func configureConstraints() {
-        
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-        
-        if let bottomBar = self.bottomBar {
-            bottomBar.translatesAutoresizingMaskIntoConstraints = false
-            NSLayoutConstraint.activate([
-                bottomBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                bottomBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                bottomBar.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
-        }
     }
     
     private func configureData() {
@@ -268,29 +250,5 @@ extension AssetPickerViewController: UICollectionViewDataSource, UICollectionVie
 //        let delegate = PhotoBrowserDefaultDelegate()
 //        let browser = PhotoBrowserViewController(dataSource: assetDataSource, transDelegate: trans, delegate: delegate)
 //        browser.show(pageIndex: indexPath.item, in: self)
-    }
-}
-
-
-public protocol PhotoBrowserZoomTransitioningOriginResource {
-    
-    var originResourceView: UIView { get }
-    
-    var originResourceAspectRatio: CGFloat { get }
-}
-
-extension UIImageView: PhotoBrowserZoomTransitioningOriginResource {
-    public var originResourceView: UIView {
-        return self
-    }
-    
-    public var originResourceAspectRatio: CGFloat {
-        if let image = image, image.size.height > 0 {
-            return image.size.width / image.size.height
-        }
-        if bounds.height > 0 {
-            return bounds.width / bounds.height
-        }
-        return 0
     }
 }
