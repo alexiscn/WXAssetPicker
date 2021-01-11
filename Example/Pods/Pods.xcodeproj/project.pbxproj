@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D799BCD6A5B1A27CE3C3974AC408A6B /* AssetPickerBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9741E8A57D010EE01446638FAF700E0 /* AssetPickerBottomBar.swift */; };
+		0BBA62A989747FB3296916725FD5C512 /* AssetPickerBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FE7F5834880C5DF22DB76A3F0E89B /* AssetPickerBottomBar.swift */; };
 		2076D302141F71E2A63B1D6E5DC4C522 /* Pods-AssetPickerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 231E61FE82121B0533D1CC582DC24034 /* Pods-AssetPickerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D7A1EB9056D3C5C21A9CFD47FB766EF /* AssetPickerSelectCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E210124038D8D069AEF8B289AFACF /* AssetPickerSelectCheckButton.swift */; };
+		22B825DCF4467FB6C62E38885E2D99A5 /* AssetPickerTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7356E131CAD7586BF760CD5C50F709 /* AssetPickerTitleButton.swift */; };
+		3D2079C6B4BE874AE474648629311E47 /* WXAssetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0EA718F86510FEA623E3C5F93957AB2 /* WXAssetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42259545DA88CC4767690505C793B9E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		434ED57F2EF13AF03D4242E023410E79 /* AlbumPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C8B4FBEFC9EBB0DD3977C495AB33B3 /* AlbumPickerTableViewCell.swift */; };
-		4891E61BCE4D5BCF01D7E53E324D2247 /* AssetPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3D9CC847516D1E7F7088774FCB287 /* AssetPickerCollectionViewCell.swift */; };
-		5A13CB89D617228CC47E5BADFF65400F /* AssetPreviewBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CEB7259FD2161BF6DED6767DF458B /* AssetPreviewBrowserViewController.swift */; };
-		80E87C026FD738689AA9EBBBF35BC6EC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6003713E7AAB7341CF4A7D216C1ACC4 /* Utility.swift */; };
-		8119E40144DD284BC7B1A95B35439780 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843E4EEB6DCFC7EDA4EB60C88F109D9D /* Media.xcassets */; };
-		833F3C70063E8390A2F1EE10450B77A8 /* MediaAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773BA836A42E9D85FBEFF8BF05C59B37 /* MediaAsset.swift */; };
-		8C859B9B901E106158639387E524F4DC /* WXAssetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6795892B85BFB98C339C9E6E27D3D2 /* WXAssetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91E268EC0E29C48629DA58A736D63632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4B4183F673609E0832B645D78099FCED /* AssetPreviewBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F4FDFE0F6E789E75114C002034F27 /* AssetPreviewBrowserViewController.swift */; };
+		4BC6FD4CB48FD7B594C9C2EF4859B80B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		580C2D0F92DDC74AF0B561555E3FCC72 /* AssetPickerSelectCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B435E9E8B622DF105EF7C91D2E9FF /* AssetPickerSelectCheckButton.swift */; };
+		5D553B0E3D22243B32F38DC17AFD236C /* WXAssetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7823CEBBE78F2EA4D52EA0BBA44FDC /* WXAssetPicker-dummy.m */; };
+		66930A83147443F4FE633F4820FB8247 /* AssetPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF7C178A46D0299DA61401DE66D044 /* AssetPickerViewController.swift */; };
+		75CED97CA9D72A969441570F993ECDE4 /* AssetPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53B1A9586FD8EEE0936CC2C7DA2B77A /* AssetPickerCollectionViewCell.swift */; };
+		877146389C546F9315483FC4DA9FADBA /* Media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1BFDC33F1CBA8A109592323A51EF2B8 /* Media.bundle */; };
+		92BB3A9B790BD0CDF14DDC6F089A9AF1 /* AssetPickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB93B89B8C4DE24A62A404F115A638E /* AssetPickerConfiguration.swift */; };
 		999F061152065669BBB91DF6AE7FA887 /* Pods-AssetPickerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2164343160DE79A0EF3D51CED4CD19 /* Pods-AssetPickerExample-dummy.m */; };
-		9E788FAC9F8C2B7F703A61F01753F8A7 /* AssetPickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B910E3516614475813472986CD24BF /* AssetPickerConfiguration.swift */; };
-		9FA856076BBDFA4BE04F164EF5A46FB7 /* AlbumPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E573C3870525542956647BD88C8D2E1 /* AlbumPickerViewController.swift */; };
-		C62A165AA9E4EB7D4A7723906795AB8E /* WXAssetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA01359FD523980466C7AC440324FB5 /* WXAssetPicker-dummy.m */; };
-		C66BF68868AFEF3ED04F35D2EC365C38 /* AssetPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E79960458BDF676B8511EAF7766F14 /* AssetPickerViewController.swift */; };
-		D75AE97F8EF066373F67EE7B0165783B /* Media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1BFDC33F1CBA8A109592323A51EF2B8 /* Media.bundle */; };
+		A63D7128FD96AA637F5F2995F4E5B362 /* AlbumPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C180D347BE57B0A2DADA49214A6F2 /* AlbumPickerViewController.swift */; };
+		B0D286101AF7241C01F54FF1116BF00D /* MediaAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5CF015F217E64BE099C0F3812EC00 /* MediaAsset.swift */; };
+		B511BA266CC5C1619772182E04D02AB9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19CC7F58CA16F895E1CDEF6C3F0F289 /* Media.xcassets */; };
+		BCB4F8ADB795ED55A8C15343F9CB70DA /* AlbumPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C81E33519A965F235E2F4C17B581C0 /* AlbumPickerTableViewCell.swift */; };
+		DC9123AA841F87DA6E57CE3F84849054 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61708F3379B1921A58D475C07D6B6DC7 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5F13205C4D3F59019DD998A078611A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC5216C32CCDC5509E803019B7E9381;
+			remoteInfo = "WXAssetPicker-Media";
+		};
 		9653ABD8FCBD98DC06541DA1946AC68D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -35,64 +43,50 @@
 			remoteGlobalIDString = DEB39939D07EC97B13F94ED0B3370CE1;
 			remoteInfo = WXAssetPicker;
 		};
-		9F004C59E0D2439B74A4CFCEE44678BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BC5216C32CCDC5509E803019B7E9381;
-			remoteInfo = "WXAssetPicker-Media";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DFD358C8A077AB7E51F1B9DFD49FF68 /* WXAssetPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXAssetPicker-Info.plist"; sourceTree = "<group>"; };
+		0AAEBB80C4DA688687142720A077579E /* WXAssetPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXAssetPicker.release.xcconfig; sourceTree = "<group>"; };
+		0E7823CEBBE78F2EA4D52EA0BBA44FDC /* WXAssetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXAssetPicker-dummy.m"; sourceTree = "<group>"; };
 		14DA2DC97A1B31A0BE9CCF76E5E539C4 /* WXAssetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXAssetPicker.framework; path = WXAssetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D6795892B85BFB98C339C9E6E27D3D2 /* WXAssetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXAssetPicker-umbrella.h"; sourceTree = "<group>"; };
+		190F4FDFE0F6E789E75114C002034F27 /* AssetPreviewBrowserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPreviewBrowserViewController.swift; path = Sources/AssetPreviewBrowserViewController.swift; sourceTree = "<group>"; };
+		223C180D347BE57B0A2DADA49214A6F2 /* AlbumPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumPickerViewController.swift; path = Sources/AlbumPickerViewController.swift; sourceTree = "<group>"; };
 		231E61FE82121B0533D1CC582DC24034 /* Pods-AssetPickerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AssetPickerExample-umbrella.h"; sourceTree = "<group>"; };
+		2C18B0E3C7CFCBB573E2994E06A9B99F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		2C7560C141AA4F3FC321E9DAB9BB345A /* Pods-AssetPickerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssetPickerExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		301E196EABCFD81244379C70BAC20595 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3930D10429DD6B5EFA3290292469259E /* WXAssetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXAssetPicker.modulemap; sourceTree = "<group>"; };
 		3B3A3D8078BD8FA488D62A91BB8A81E7 /* Pods-AssetPickerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssetPickerExample-Info.plist"; sourceTree = "<group>"; };
-		3E573C3870525542956647BD88C8D2E1 /* AlbumPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumPickerViewController.swift; path = Sources/AlbumPickerViewController.swift; sourceTree = "<group>"; };
+		3CA44DC82E190D073D07B0608641D673 /* WXAssetPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXAssetPicker-Info.plist"; sourceTree = "<group>"; };
 		40943DB48DD76104D679646EE40E5960 /* Pods_AssetPickerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AssetPickerExample.framework; path = "Pods-AssetPickerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4787A092029EA17673E7058359BD668E /* Pods-AssetPickerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssetPickerExample.release.xcconfig"; sourceTree = "<group>"; };
-		56A3D9CC847516D1E7F7088774FCB287 /* AssetPickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerCollectionViewCell.swift; path = Sources/AssetPickerCollectionViewCell.swift; sourceTree = "<group>"; };
-		5B1E210124038D8D069AEF8B289AFACF /* AssetPickerSelectCheckButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerSelectCheckButton.swift; path = Sources/AssetPickerSelectCheckButton.swift; sourceTree = "<group>"; };
+		58FF7C178A46D0299DA61401DE66D044 /* AssetPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerViewController.swift; path = Sources/AssetPickerViewController.swift; sourceTree = "<group>"; };
 		5B92321B216EB41DACF92EE033D542AE /* Pods-AssetPickerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssetPickerExample.debug.xcconfig"; sourceTree = "<group>"; };
-		68C8B4FBEFC9EBB0DD3977C495AB33B3 /* AlbumPickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumPickerTableViewCell.swift; path = Sources/AlbumPickerTableViewCell.swift; sourceTree = "<group>"; };
-		773BA836A42E9D85FBEFF8BF05C59B37 /* MediaAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaAsset.swift; path = Sources/MediaAsset.swift; sourceTree = "<group>"; };
-		843E4EEB6DCFC7EDA4EB60C88F109D9D /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Sources/Media.xcassets; sourceTree = "<group>"; };
-		865CEB7259FD2161BF6DED6767DF458B /* AssetPreviewBrowserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPreviewBrowserViewController.swift; path = Sources/AssetPreviewBrowserViewController.swift; sourceTree = "<group>"; };
-		8A77806823A11F51683DC7D31846AF07 /* WXAssetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXAssetPicker-prefix.pch"; sourceTree = "<group>"; };
+		61708F3379B1921A58D475C07D6B6DC7 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/Utility.swift; sourceTree = "<group>"; };
+		6D2EB37220C06C51B098879EC4E0224E /* ResourceBundle-Media-WXAssetPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Media-WXAssetPicker-Info.plist"; sourceTree = "<group>"; };
+		84C81E33519A965F235E2F4C17B581C0 /* AlbumPickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumPickerTableViewCell.swift; path = Sources/AlbumPickerTableViewCell.swift; sourceTree = "<group>"; };
+		8A73B82851CFEF837F588F9B6F093BB6 /* WXAssetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXAssetPicker.modulemap; sourceTree = "<group>"; };
 		8D003D52B02EFA87A5A0B4BE32850F6B /* Pods-AssetPickerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssetPickerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8D2164343160DE79A0EF3D51CED4CD19 /* Pods-AssetPickerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssetPickerExample-dummy.m"; sourceTree = "<group>"; };
-		960848F8AB1D23218056DCD933FAB2AE /* WXAssetPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXAssetPicker.debug.xcconfig; sourceTree = "<group>"; };
-		9AB74EC23E7930C62332BB96B32003AD /* WXAssetPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXAssetPicker.release.xcconfig; sourceTree = "<group>"; };
+		9CF5CF015F217E64BE099C0F3812EC00 /* MediaAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaAsset.swift; path = Sources/MediaAsset.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A12DD2CE0075987D7549F5CA52ED5492 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A351471B2AACA9A1A32014DBEE36E5DD /* WXAssetPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXAssetPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AEB36CD17D989BA81E787FAEE876FE46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		ABB93B89B8C4DE24A62A404F115A638E /* AssetPickerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerConfiguration.swift; path = Sources/AssetPickerConfiguration.swift; sourceTree = "<group>"; };
+		B0EA718F86510FEA623E3C5F93957AB2 /* WXAssetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXAssetPicker-umbrella.h"; sourceTree = "<group>"; };
+		B19CC7F58CA16F895E1CDEF6C3F0F289 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Sources/Media.xcassets; sourceTree = "<group>"; };
 		B1BFDC33F1CBA8A109592323A51EF2B8 /* Media.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Media.bundle; path = "WXAssetPicker-Media.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8E79960458BDF676B8511EAF7766F14 /* AssetPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerViewController.swift; path = Sources/AssetPickerViewController.swift; sourceTree = "<group>"; };
-		BDA01359FD523980466C7AC440324FB5 /* WXAssetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXAssetPicker-dummy.m"; sourceTree = "<group>"; };
+		B58B435E9E8B622DF105EF7C91D2E9FF /* AssetPickerSelectCheckButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerSelectCheckButton.swift; path = Sources/AssetPickerSelectCheckButton.swift; sourceTree = "<group>"; };
 		BDCEBA1F4EA49B77AAD7B25E1FF04957 /* Pods-AssetPickerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssetPickerExample-frameworks.sh"; sourceTree = "<group>"; };
 		D2DE153AAFE47A79B93B4F2685C4C5C0 /* Pods-AssetPickerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AssetPickerExample.modulemap"; sourceTree = "<group>"; };
-		D5B910E3516614475813472986CD24BF /* AssetPickerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerConfiguration.swift; path = Sources/AssetPickerConfiguration.swift; sourceTree = "<group>"; };
-		E6003713E7AAB7341CF4A7D216C1ACC4 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/Utility.swift; sourceTree = "<group>"; };
-		E842DEE0AD8F7F616372F71DC24798CC /* ResourceBundle-Media-WXAssetPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Media-WXAssetPicker-Info.plist"; sourceTree = "<group>"; };
-		E9741E8A57D010EE01446638FAF700E0 /* AssetPickerBottomBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerBottomBar.swift; path = Sources/AssetPickerBottomBar.swift; sourceTree = "<group>"; };
+		DF7356E131CAD7586BF760CD5C50F709 /* AssetPickerTitleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerTitleButton.swift; path = Sources/AssetPickerTitleButton.swift; sourceTree = "<group>"; };
+		E90FE7F5834880C5DF22DB76A3F0E89B /* AssetPickerBottomBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerBottomBar.swift; path = Sources/AssetPickerBottomBar.swift; sourceTree = "<group>"; };
+		EB11ED7F32A4ACFEA81F27E38CF5EAA7 /* WXAssetPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXAssetPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F33625533AAB9DC3CA7BC70370471C66 /* WXAssetPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXAssetPicker.debug.xcconfig; sourceTree = "<group>"; };
+		F53B1A9586FD8EEE0936CC2C7DA2B77A /* AssetPickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetPickerCollectionViewCell.swift; path = Sources/AssetPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7B96A46E2ADC87545B45EE182A4AF27 /* WXAssetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXAssetPicker-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5FC8D77208993313BD9F14F32F65F782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91E268EC0E29C48629DA58A736D63632 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8860584F781F5206E5A18FDDAF0CCD26 /* Frameworks */ = {
+		94993B40F0228E3CEC352F9AD41A7AA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,36 +101,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAAB601C4F7E406D3F5ADDFBCCA17F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC6FD4CB48FD7B594C9C2EF4859B80B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		333B779742813751AE08412DBD8D633E /* WXAssetPicker */ = {
+		02F6232F98FA5ABC0ECF2036A1303710 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				68C8B4FBEFC9EBB0DD3977C495AB33B3 /* AlbumPickerTableViewCell.swift */,
-				3E573C3870525542956647BD88C8D2E1 /* AlbumPickerViewController.swift */,
-				E9741E8A57D010EE01446638FAF700E0 /* AssetPickerBottomBar.swift */,
-				56A3D9CC847516D1E7F7088774FCB287 /* AssetPickerCollectionViewCell.swift */,
-				D5B910E3516614475813472986CD24BF /* AssetPickerConfiguration.swift */,
-				5B1E210124038D8D069AEF8B289AFACF /* AssetPickerSelectCheckButton.swift */,
-				B8E79960458BDF676B8511EAF7766F14 /* AssetPickerViewController.swift */,
-				865CEB7259FD2161BF6DED6767DF458B /* AssetPreviewBrowserViewController.swift */,
-				773BA836A42E9D85FBEFF8BF05C59B37 /* MediaAsset.swift */,
-				E6003713E7AAB7341CF4A7D216C1ACC4 /* Utility.swift */,
-				9FBBA684164ABE6FCEB19784198B6BE7 /* Pod */,
-				44829E535C44317055BB0E62B19B3BE8 /* Resources */,
-				4B2EC7C2C2C5F6D45DA4F43C4721A67C /* Support Files */,
+				6D2EB37220C06C51B098879EC4E0224E /* ResourceBundle-Media-WXAssetPicker-Info.plist */,
+				8A73B82851CFEF837F588F9B6F093BB6 /* WXAssetPicker.modulemap */,
+				0E7823CEBBE78F2EA4D52EA0BBA44FDC /* WXAssetPicker-dummy.m */,
+				3CA44DC82E190D073D07B0608641D673 /* WXAssetPicker-Info.plist */,
+				F7B96A46E2ADC87545B45EE182A4AF27 /* WXAssetPicker-prefix.pch */,
+				B0EA718F86510FEA623E3C5F93957AB2 /* WXAssetPicker-umbrella.h */,
+				F33625533AAB9DC3CA7BC70370471C66 /* WXAssetPicker.debug.xcconfig */,
+				0AAEBB80C4DA688687142720A077579E /* WXAssetPicker.release.xcconfig */,
 			);
-			name = WXAssetPicker;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WXAssetPicker";
 			sourceTree = "<group>";
 		};
-		44829E535C44317055BB0E62B19B3BE8 /* Resources */ = {
+		0F5101142F45FF3395E905D636E46E9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				843E4EEB6DCFC7EDA4EB60C88F109D9D /* Media.xcassets */,
+				B19CC7F58CA16F895E1CDEF6C3F0F289 /* Media.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		3C73732FF5B97A6FECE87870A3CF84A1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				908DAA7493AFA2C01A6A24FC6AA70F4F /* WXAssetPicker */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		448839D3516430B3A683F909417BA2BC /* Products */ = {
@@ -157,20 +162,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4B2EC7C2C2C5F6D45DA4F43C4721A67C /* Support Files */ = {
+		908DAA7493AFA2C01A6A24FC6AA70F4F /* WXAssetPicker */ = {
 			isa = PBXGroup;
 			children = (
-				E842DEE0AD8F7F616372F71DC24798CC /* ResourceBundle-Media-WXAssetPicker-Info.plist */,
-				3930D10429DD6B5EFA3290292469259E /* WXAssetPicker.modulemap */,
-				BDA01359FD523980466C7AC440324FB5 /* WXAssetPicker-dummy.m */,
-				0DFD358C8A077AB7E51F1B9DFD49FF68 /* WXAssetPicker-Info.plist */,
-				8A77806823A11F51683DC7D31846AF07 /* WXAssetPicker-prefix.pch */,
-				1D6795892B85BFB98C339C9E6E27D3D2 /* WXAssetPicker-umbrella.h */,
-				960848F8AB1D23218056DCD933FAB2AE /* WXAssetPicker.debug.xcconfig */,
-				9AB74EC23E7930C62332BB96B32003AD /* WXAssetPicker.release.xcconfig */,
+				84C81E33519A965F235E2F4C17B581C0 /* AlbumPickerTableViewCell.swift */,
+				223C180D347BE57B0A2DADA49214A6F2 /* AlbumPickerViewController.swift */,
+				E90FE7F5834880C5DF22DB76A3F0E89B /* AssetPickerBottomBar.swift */,
+				F53B1A9586FD8EEE0936CC2C7DA2B77A /* AssetPickerCollectionViewCell.swift */,
+				ABB93B89B8C4DE24A62A404F115A638E /* AssetPickerConfiguration.swift */,
+				B58B435E9E8B622DF105EF7C91D2E9FF /* AssetPickerSelectCheckButton.swift */,
+				DF7356E131CAD7586BF760CD5C50F709 /* AssetPickerTitleButton.swift */,
+				58FF7C178A46D0299DA61401DE66D044 /* AssetPickerViewController.swift */,
+				190F4FDFE0F6E789E75114C002034F27 /* AssetPreviewBrowserViewController.swift */,
+				9CF5CF015F217E64BE099C0F3812EC00 /* MediaAsset.swift */,
+				61708F3379B1921A58D475C07D6B6DC7 /* Utility.swift */,
+				EA1B6D01BDD0D2EB2DF4C24D68B27625 /* Pod */,
+				0F5101142F45FF3395E905D636E46E9C /* Resources */,
+				02F6232F98FA5ABC0ECF2036A1303710 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WXAssetPicker";
+			name = WXAssetPicker;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		928588549222CD7A290588AD1097CC48 /* Pods-AssetPickerExample */ = {
@@ -190,24 +201,6 @@
 			path = "Target Support Files/Pods-AssetPickerExample";
 			sourceTree = "<group>";
 		};
-		9FBBA684164ABE6FCEB19784198B6BE7 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AEB36CD17D989BA81E787FAEE876FE46 /* LICENSE */,
-				A12DD2CE0075987D7549F5CA52ED5492 /* README.md */,
-				A351471B2AACA9A1A32014DBEE36E5DD /* WXAssetPicker.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B7FD53FD83166F9F14D90E14A77FD9AD /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				333B779742813751AE08412DBD8D633E /* WXAssetPicker */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B7FD53FD83166F9F14D90E14A77FD9AD /* Development Pods */,
+				3C73732FF5B97A6FECE87870A3CF84A1 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				448839D3516430B3A683F909417BA2BC /* Products */,
 				4721816C15C99926698BDBD50AAA5EC7 /* Targets Support Files */,
@@ -235,6 +228,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA1B6D01BDD0D2EB2DF4C24D68B27625 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2C18B0E3C7CFCBB573E2994E06A9B99F /* LICENSE */,
+				301E196EABCFD81244379C70BAC20595 /* README.md */,
+				EB11ED7F32A4ACFEA81F27E38CF5EAA7 /* WXAssetPicker.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -246,11 +249,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92FEA231D7B56F30E0B95F68D1C90026 /* Headers */ = {
+		855986F65B2F7D608C3267B2A2EF862E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C859B9B901E106158639387E524F4DC /* WXAssetPicker-umbrella.h in Headers */,
+				3D2079C6B4BE874AE474648629311E47 /* WXAssetPicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +262,11 @@
 /* Begin PBXNativeTarget section */
 		6BC5216C32CCDC5509E803019B7E9381 /* WXAssetPicker-Media */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D3002961DD2E7E3DE9C4276DD77037C /* Build configuration list for PBXNativeTarget "WXAssetPicker-Media" */;
+			buildConfigurationList = 6AEBAA66903F1E1514D7BCE249C7835C /* Build configuration list for PBXNativeTarget "WXAssetPicker-Media" */;
 			buildPhases = (
-				C4F76817FB4AFF2FAD577B777D6E4789 /* Sources */,
-				8860584F781F5206E5A18FDDAF0CCD26 /* Frameworks */,
-				B9C2FC87A9DE1C97DAA8F78A025E0616 /* Resources */,
+				CA8FB607900000EEF1A4613CBE9BB035 /* Sources */,
+				94993B40F0228E3CEC352F9AD41A7AA2 /* Frameworks */,
+				8991752BE029D59815FF77AA05831BED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -295,17 +298,17 @@
 		};
 		DEB39939D07EC97B13F94ED0B3370CE1 /* WXAssetPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B79D7EB43EEF626BB87F9A778140D16B /* Build configuration list for PBXNativeTarget "WXAssetPicker" */;
+			buildConfigurationList = 1DAEF9A55BBCFD9789D7FF092CB2F0AD /* Build configuration list for PBXNativeTarget "WXAssetPicker" */;
 			buildPhases = (
-				92FEA231D7B56F30E0B95F68D1C90026 /* Headers */,
-				3CC054066C0663D29E6C69F61FBAC95F /* Sources */,
-				5FC8D77208993313BD9F14F32F65F782 /* Frameworks */,
-				7C00CEA8DCBB45D2AB6FEEBEF89F7324 /* Resources */,
+				855986F65B2F7D608C3267B2A2EF862E /* Headers */,
+				FD55EF7D634040D3792DA9B6416065AE /* Sources */,
+				FAAB601C4F7E406D3F5ADDFBCCA17F50 /* Frameworks */,
+				89CED8DEFEA3639D8AC2781DC2B93D71 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D5B08EAD2CFAF0AA2F2308B9AAD4C00 /* PBXTargetDependency */,
+				2D86717E2CE99144ECE1F574883B11E6 /* PBXTargetDependency */,
 			);
 			name = WXAssetPicker;
 			productName = WXAssetPicker;
@@ -342,19 +345,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7C00CEA8DCBB45D2AB6FEEBEF89F7324 /* Resources */ = {
+		8991752BE029D59815FF77AA05831BED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75AE97F8EF066373F67EE7B0165783B /* Media.bundle in Resources */,
+				B511BA266CC5C1619772182E04D02AB9 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9C2FC87A9DE1C97DAA8F78A025E0616 /* Resources */ = {
+		89CED8DEFEA3639D8AC2781DC2B93D71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8119E40144DD284BC7B1A95B35439780 /* Media.xcassets in Resources */,
+				877146389C546F9315483FC4DA9FADBA /* Media.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,24 +371,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3CC054066C0663D29E6C69F61FBAC95F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				434ED57F2EF13AF03D4242E023410E79 /* AlbumPickerTableViewCell.swift in Sources */,
-				9FA856076BBDFA4BE04F164EF5A46FB7 /* AlbumPickerViewController.swift in Sources */,
-				0D799BCD6A5B1A27CE3C3974AC408A6B /* AssetPickerBottomBar.swift in Sources */,
-				4891E61BCE4D5BCF01D7E53E324D2247 /* AssetPickerCollectionViewCell.swift in Sources */,
-				9E788FAC9F8C2B7F703A61F01753F8A7 /* AssetPickerConfiguration.swift in Sources */,
-				2D7A1EB9056D3C5C21A9CFD47FB766EF /* AssetPickerSelectCheckButton.swift in Sources */,
-				C66BF68868AFEF3ED04F35D2EC365C38 /* AssetPickerViewController.swift in Sources */,
-				5A13CB89D617228CC47E5BADFF65400F /* AssetPreviewBrowserViewController.swift in Sources */,
-				833F3C70063E8390A2F1EE10450B77A8 /* MediaAsset.swift in Sources */,
-				80E87C026FD738689AA9EBBBF35BC6EC /* Utility.swift in Sources */,
-				C62A165AA9E4EB7D4A7723906795AB8E /* WXAssetPicker-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6D5169FB6BE42147A686C716AE0BD3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,21 +379,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4F76817FB4AFF2FAD577B777D6E4789 /* Sources */ = {
+		CA8FB607900000EEF1A4613CBE9BB035 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD55EF7D634040D3792DA9B6416065AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB4F8ADB795ED55A8C15343F9CB70DA /* AlbumPickerTableViewCell.swift in Sources */,
+				A63D7128FD96AA637F5F2995F4E5B362 /* AlbumPickerViewController.swift in Sources */,
+				0BBA62A989747FB3296916725FD5C512 /* AssetPickerBottomBar.swift in Sources */,
+				75CED97CA9D72A969441570F993ECDE4 /* AssetPickerCollectionViewCell.swift in Sources */,
+				92BB3A9B790BD0CDF14DDC6F089A9AF1 /* AssetPickerConfiguration.swift in Sources */,
+				580C2D0F92DDC74AF0B561555E3FCC72 /* AssetPickerSelectCheckButton.swift in Sources */,
+				22B825DCF4467FB6C62E38885E2D99A5 /* AssetPickerTitleButton.swift in Sources */,
+				66930A83147443F4FE633F4820FB8247 /* AssetPickerViewController.swift in Sources */,
+				4B4183F673609E0832B645D78099FCED /* AssetPreviewBrowserViewController.swift in Sources */,
+				B0D286101AF7241C01F54FF1116BF00D /* MediaAsset.swift in Sources */,
+				DC9123AA841F87DA6E57CE3F84849054 /* Utility.swift in Sources */,
+				5D553B0E3D22243B32F38DC17AFD236C /* WXAssetPicker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D5B08EAD2CFAF0AA2F2308B9AAD4C00 /* PBXTargetDependency */ = {
+		2D86717E2CE99144ECE1F574883B11E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "WXAssetPicker-Media";
 			target = 6BC5216C32CCDC5509E803019B7E9381 /* WXAssetPicker-Media */;
-			targetProxy = 9F004C59E0D2439B74A4CFCEE44678BB /* PBXContainerItemProxy */;
+			targetProxy = 5F13205C4D3F59019DD998A078611A78 /* PBXContainerItemProxy */;
 		};
 		A54003A74F16E389D2DA511D3B4416C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -479,26 +483,9 @@
 			};
 			name = Release;
 		};
-		2130AA909978ABF631461840822F8F96 /* Release */ = {
+		169F01090BD0E82DE3DE75683745FC02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AB74EC23E7930C62332BB96B32003AD /* WXAssetPicker.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXAssetPicker";
-				IBSC_MODULE = WXAssetPicker;
-				INFOPLIST_FILE = "Target Support Files/WXAssetPicker/ResourceBundle-Media-WXAssetPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = Media;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		32C2A3A2998352D386F3D3074E43DBB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 960848F8AB1D23218056DCD933FAB2AE /* WXAssetPicker.debug.xcconfig */;
+			baseConfigurationReference = 0AAEBB80C4DA688687142720A077579E /* WXAssetPicker.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -527,10 +514,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		3C490B56FBD3FC68D20DCFE6EF7B1177 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -569,43 +557,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		57905D90BAEC4CFC3D3FF518C650C2D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AB74EC23E7930C62332BB96B32003AD /* WXAssetPicker.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WXAssetPicker/WXAssetPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WXAssetPicker/WXAssetPicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WXAssetPicker/WXAssetPicker.modulemap";
-				PRODUCT_MODULE_NAME = WXAssetPicker;
-				PRODUCT_NAME = WXAssetPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		5D343F17AE52AAF3726BDB6374CDEB2A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -646,9 +597,9 @@
 			};
 			name = Release;
 		};
-		7AA8EDD1E57FDFD9930FEB1460443330 /* Debug */ = {
+		6B39FDAC2D3E53A523659E93EBBC2018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 960848F8AB1D23218056DCD933FAB2AE /* WXAssetPicker.debug.xcconfig */;
+			baseConfigurationReference = F33625533AAB9DC3CA7BC70370471C66 /* WXAssetPicker.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXAssetPicker";
@@ -660,6 +611,59 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		89B33BAFD968C049B549BF9B1AFA5982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAEBB80C4DA688687142720A077579E /* WXAssetPicker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXAssetPicker";
+				IBSC_MODULE = WXAssetPicker;
+				INFOPLIST_FILE = "Target Support Files/WXAssetPicker/ResourceBundle-Media-WXAssetPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = Media;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		933B5C910CEB0B2E9D86E8801025AEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33625533AAB9DC3CA7BC70370471C66 /* WXAssetPicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WXAssetPicker/WXAssetPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WXAssetPicker/WXAssetPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WXAssetPicker/WXAssetPicker.modulemap";
+				PRODUCT_MODULE_NAME = WXAssetPicker;
+				PRODUCT_NAME = WXAssetPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -730,6 +734,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DAEF9A55BBCFD9789D7FF092CB2F0AD /* Build configuration list for PBXNativeTarget "WXAssetPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933B5C910CEB0B2E9D86E8801025AEA7 /* Debug */,
+				169F01090BD0E82DE3DE75683745FC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -739,20 +752,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D3002961DD2E7E3DE9C4276DD77037C /* Build configuration list for PBXNativeTarget "WXAssetPicker-Media" */ = {
+		6AEBAA66903F1E1514D7BCE249C7835C /* Build configuration list for PBXNativeTarget "WXAssetPicker-Media" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AA8EDD1E57FDFD9930FEB1460443330 /* Debug */,
-				2130AA909978ABF631461840822F8F96 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B79D7EB43EEF626BB87F9A778140D16B /* Build configuration list for PBXNativeTarget "WXAssetPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32C2A3A2998352D386F3D3074E43DBB9 /* Debug */,
-				57905D90BAEC4CFC3D3FF518C650C2D9 /* Release */,
+				6B39FDAC2D3E53A523659E93EBBC2018 /* Debug */,
+				89B33BAFD968C049B549BF9B1AFA5982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

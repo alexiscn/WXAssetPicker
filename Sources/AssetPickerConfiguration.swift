@@ -43,6 +43,10 @@ public class AssetPickerConfiguration {
         
         public var radioButtonSelectedColor: UIColor = UIColor(red: 0.027, green: 0.757, blue: 0.376, alpha: 1.0)
         
+        public var originCheckedImage: UIImage? = Utility.image(named: "wx_asset_picker_checked_20x20_")
+        
+        public var closeButtonImage: UIImage? = Utility.image(named: "wx_asset_picker_close_24x24_")
+        
     }
     
     public var assets = Assets()

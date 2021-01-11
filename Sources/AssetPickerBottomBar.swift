@@ -27,7 +27,7 @@ class AssetPickerBottomBar: UIView {
     
     private let sendButton: UIButton
     
-    override init(frame: CGRect) {
+    init(configuration: AssetPickerConfiguration, frame: CGRect) {
         
         backgroundImageView = UIImageView()
         backgroundImageView.image = Utility.image(named: "wx_asset_picker_toolbar_bg")
@@ -45,7 +45,7 @@ class AssetPickerBottomBar: UIView {
         originButton.setTitle("原图", for: .normal)
         originButton.setTitleColor(.white, for: .normal)
         originButton.setImage(UIImage(named: "FriendsSendsPicturesArtworkNIcon_20x21_"), for: .normal)
-        originButton.setImage(UIImage(named: "FriendsSendsPicturesArtworkIcon_20x21_"), for: .selected)
+        originButton.setImage(configuration.assets.originCheckedImage, for: .selected)
         originButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         originButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: -8)
         

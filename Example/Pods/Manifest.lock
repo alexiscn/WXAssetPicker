@@ -1,5 +1,5 @@
 PODS:
-  - WXAssetPicker (1.0.0)
+  - WXAssetPicker (0.1.0)
 
 DEPENDENCIES:
   - WXAssetPicker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WXAssetPicker: 506c34ed5b6ed7b84c431ebabb173f043c696be3
+  WXAssetPicker: b4dffbbff9dba1ed3232f98bbf56b8bad6e0d057
 
 PODFILE CHECKSUM: f81aff1d63db02895843c8578abc2883e82df955
 

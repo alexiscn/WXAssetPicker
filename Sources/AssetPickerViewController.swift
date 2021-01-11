@@ -102,7 +102,7 @@ public class AssetPickerViewController: UIViewController {
     
         let height = view.safeAreaInsets.bottom + configuration.layouts.bottomBarHeight
         let frame = CGRect(x: 0, y: view.bounds.height - height, width: view.bounds.width, height: height)
-        let bottomBar = AssetPickerBottomBar(frame: frame)
+        let bottomBar = AssetPickerBottomBar(configuration: configuration, frame: frame)
         bottomBar.previewHandler = {
             
         }
@@ -182,8 +182,12 @@ public class AssetPickerViewController: UIViewController {
 
     private func configureNavigationBar() {
         navigationItem.title = "Camera Roll"
-        navigationController?.navigationBar.tintColor = .black
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelButtonClicked))
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.isTranslucent = true
+        
+        let closeItem = UIBarButtonItem(image: configuration.assets.closeButtonImage, style: .plain, target: self, action: #selector(onCloseButtonClicked))
+        navigationItem.leftBarButtonItem = closeItem
     }
     
     private func updateSelection(at indexPath: IndexPath) {
@@ -211,6 +215,10 @@ public class AssetPickerViewController: UIViewController {
 extension AssetPickerViewController {
     
     @objc private func cancelButtonClicked() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc private func onCloseButtonClicked() {
         dismiss(animated: true, completion: nil)
     }
 }

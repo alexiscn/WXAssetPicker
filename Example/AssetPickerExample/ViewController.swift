@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         
         let assetPicker = AssetPickerViewController()
         let nav = UINavigationController(rootViewController: assetPicker)
+        nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true, completion: nil)
         
     }
