@@ -2,22 +2,18 @@
 //  AssetPickerBottomBar.swift
 //  WeChatSwift
 //
-//  Created by xu.shuifeng on 2019/7/23.
+//  Created by alexiscn on 2019/7/23.
 //  Copyright © 2019 alexiscn. All rights reserved.
 //
 
 import UIKit
-
-protocol AssetPickerBottomBarDelegate {
-    
-}
 
 class AssetPickerBottomBar: UIView {
     
     var previewHandler: (() -> Void)?
     var sendHandler: (() -> Void)?
     
-    private let backgroundImageView: UIImageView
+    private let effectView: UIVisualEffectView
     
     private let containerView: UIView
     
@@ -29,8 +25,8 @@ class AssetPickerBottomBar: UIView {
     
     init(configuration: AssetPickerConfiguration, frame: CGRect) {
         
-        backgroundImageView = UIImageView()
-        backgroundImageView.image = Utility.image(named: "wx_asset_picker_toolbar_bg")
+        let effect = UIBlurEffect(style: .dark)
+        effectView = UIVisualEffectView(effect: effect)
         
         containerView = UIView()
         
@@ -60,7 +56,7 @@ class AssetPickerBottomBar: UIView {
         
         super.init(frame: frame)
         
-        addSubview(backgroundImageView)
+        addSubview(effectView)
         addSubview(containerView)
         
         containerView.addSubview(previewButton)
@@ -79,8 +75,8 @@ class AssetPickerBottomBar: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        backgroundImageView.frame = bounds
-        containerView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 45)
+        effectView.frame = bounds
+        containerView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 56)
         
         previewButton.frame = CGRect(x: 6, y: (bounds.height - 20)/2.0, width: 60, height: 20)
         originButton.frame = CGRect(x: (bounds.width - 80)/2.0, y: 0, width: 80, height: bounds.height)

@@ -2,7 +2,7 @@
 //  AssetPickerTitleButton.swift
 //  WXAssetPicker
 //
-//  Created by xu.shuifeng on 2021/1/11.
+//  Created by alexiscn on 2021/1/11.
 //
 
 import UIKit

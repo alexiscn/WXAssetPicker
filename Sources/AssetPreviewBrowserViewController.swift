@@ -2,7 +2,7 @@
 //  AssetPreviewBrowserViewController.swift
 //  WXAssetPicker
 //
-//  Created by xushuifeng on 2021/1/1.
+//  Created by alexiscn on 2021/1/1.
 //
 
 import UIKit

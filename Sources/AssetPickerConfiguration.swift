@@ -2,7 +2,7 @@
 //  AssetPickerOptions.swift
 //  WXAssetPicker
 //
-//  Created by xu.shuifeng on 2019/8/16.
+//  Created by alexiscn on 2019/8/16.
 //  Copyright © 2019 alexiscn. All rights reserved.
 //
 
@@ -30,7 +30,7 @@ public class AssetPickerConfiguration {
     
     public struct Layouts {
         
-        public var bottomBarHeight: CGFloat = 45.0
+        public var bottomBarHeight: CGFloat = 56.0
         
     }
     

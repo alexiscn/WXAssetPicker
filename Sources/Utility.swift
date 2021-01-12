@@ -2,7 +2,7 @@
 //  AssetPickerUtility.swift
 //  WXAssetPicker
 //
-//  Created by xu.shuifeng on 2020/5/28.
+//  Created by alexiscn on 2020/5/28.
 //
 
 import UIKit
