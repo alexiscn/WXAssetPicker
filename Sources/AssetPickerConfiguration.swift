@@ -47,6 +47,7 @@ public class AssetPickerConfiguration {
         
         public var closeButtonImage: UIImage? = Utility.image(named: "wx_asset_picker_close_24x24_")
         
+        public var arrowImage: UIImage? = Utility.image(named: "wx_asset_picker_arrow_20x20_")
     }
     
     public var assets = Assets()
