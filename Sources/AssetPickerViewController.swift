@@ -32,6 +32,12 @@ public class AssetPickerViewController: UIViewController {
     
     private var assetCollection: PHAssetCollection?
     
+    private(set) lazy var titleView: AssetPickerTitleButton = {
+        let frame = CGRect(x: 0, y: 0, width: 0.5 * view.bounds.width, height: 44)
+        let titleButton = AssetPickerTitleButton(frame: frame, configuration: configuration)
+        return titleButton
+    }()
+    
     public init(configuration: AssetPickerConfiguration = .default(), assetCollection: PHAssetCollection? = nil) {
         self.configuration = configuration
         self.assetCollection = assetCollection
@@ -181,7 +187,9 @@ public class AssetPickerViewController: UIViewController {
     }
 
     private func configureNavigationBar() {
-        navigationItem.title = "Camera Roll"
+        //navigationItem.title = "Camera Roll"
+        titleView.updateTitle("最近使用")
+        navigationItem.titleView = titleView
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.isTranslucent = true
